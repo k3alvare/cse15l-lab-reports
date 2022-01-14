@@ -73,4 +73,13 @@ Then it will continue to ask your for your password for a second time. If you le
 You should then receive where the identification and public key were saved, your key fingerprint, and the key's random image. Should look like:
 ![image](https://user-images.githubusercontent.com/97643301/149493866-83bdcefb-b9d8-4a12-99fa-3c3b2917ccd8.png)
 
+Keep note of your directory for your public rsa key which should look like `/Users/Username/.ssh/id_rsa.pub`
+
+Then SSH back onto your remote computer, and use the command `mkdir .ssh` in order to create a directory for your public rsa key.
+
+Then back on your local client use the command `scp /Users/Username/.ssh/id_rsa.pub cs15lwi22___@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+### YOU ARE NOW ABLE TO SSH AND SCP WITHOUT USING A PASSWORD
 ## Optimizing Remote Running
+In order to do things faster and optimizing remote running, a method that is used is typing all the commands in one-go in the terminal seprated by `;`.
+For example you can do `touch SomeTxt.txt; scp SomeTxt.txt cs15lwi22___@ieng6.ucsd.edu:~/; ssh cs15lwi22____@ieng6.ucsd.edu; ls` and it will run the commands inputted it in consecutive order.
