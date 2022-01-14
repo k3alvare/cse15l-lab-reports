@@ -60,4 +60,17 @@ Once the command is inputted, it will prompt you to enter your password in order
 ![image](https://user-images.githubusercontent.com/97643301/149492669-a56cd700-5a74-4650-b456-c4b0498d6f78.png)
 
 ## Setting an SSH Key
+An SSH Key is used to create a pairing with your local client with your ssh remote computer where you no longer have to input your password whenever you use the ssh or scp command.
+
+In order to create an SSH key, use the command `ssh-keygen` on your terminal.
+![image](https://user-images.githubusercontent.com/97643301/149493119-f0e34d5f-d8f3-4fda-9c81-932654098ab6.png)
+
+It will then prompt you where you want to save the file. By pressing Enter without typing anything in, it will create it within your current directory. If you would like you could type in a directory in which you would like the SSH key to be saved.
+
+It will continue to ask you to input a password for the key. You can leave this empty by just pressing enter, or you can input your own password.
+Then it will continue to ask your for your password for a second time. If you left it empty, just press enter, if not type in your password that you created.
+
+You should then receive where the identification and public key were saved, your key fingerprint, and the key's random image. Should look like:
+![image](https://user-images.githubusercontent.com/97643301/149493866-83bdcefb-b9d8-4a12-99fa-3c3b2917ccd8.png)
+
 ## Optimizing Remote Running
