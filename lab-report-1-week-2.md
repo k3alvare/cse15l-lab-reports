@@ -23,16 +23,41 @@ Once you retrieve your account, keep note of it and open VS Code. Open a termina
 **NOTE:** Your default terminal will show your user, and not the user in the image.
 
 We will then use the `ssh` command which allows us to connect to the remote desktop at UCSD.
-Type in the terminal `ssh cs15lwi22___@ieng6.ucsd.edu` where the ___ is your specified letters for your unique account. It should continue to prompt your to enter your password. Enter the password that you assigned to to your account when you first retrieved it through the UCSD's Account Lookup. 
+Type in the terminal `ssh cs15lwi22___@ieng6.ucsd.edu` where the ___ is your specified letters for your unique account. If you are logging in for the first time, it will ask `Are you sure you want to continue connecting (yes/no/[fingerprint])?` At this point type in yes and press enter. It then should continue to prompt your to enter your password. Enter the password that you assigned to to your account when you first retrieved it through the UCSD's Account Lookup. 
 
 **IMPORTANT NOTE**: Your password will not be showed being typed in the terminal, however even though you can't see it, it is still taking the input given through your keyboard. An easy way to ensure your password is being inputted correctly, you can copy and paste your password into the terminal.
 
 Once you log in, you should have a similar looking terminal:
 ![image](https://user-images.githubusercontent.com/97643301/149490453-e4a43fcb-06dd-4688-b38e-c5162b4f16de.png)
 
- 
- 
 ## Trying Some Commands
+At this point you can try using some different commands! Try different commands within the SSH remote desktop and on your local client and noting the different outputs that are given through each one! 
+Here are some commands:
+- `ls` lists files in current directory
+- `ls -l` lists all files in the current directory plus additional info such as last edited 
+- `ls -a` lists all files including hidden files in the current directory
+- `ls -lat` lists all files including hidden files in current directory and provides additional info
+- `pwd` gives absolute path of directory
+- `cd` takes you back to the home directory
+- `mkdir` creates a new folder
+- `rmdir` removes a directory
+- `scp` copies a file onto a server
+- `open` opens a file 
+- `touch` creates a new file
+- `rm` removes a file
+- `du` gets the size of files and folders in a directory
+
+Here are some commands being used on my client!: ![image](https://user-images.githubusercontent.com/97643301/149491804-aca43c0c-80bd-4839-a5ca-cdad072aaef5.png)
+
 ## Moving Files with scp
+To move files from your local client to the ssh remote computer, the command `scp` is used. 
+Type in your terminal `scp SomeFile.filetype cs15lwi22___@ieng6.ucsd.edu:~/` 
+ 
+ **NOTE:** The `:~/` must be included following your account in order for it to be moved to your ssh remote computer.
+ 
+Once the command is inputted, it will prompt you to enter your password in order to send the file over.
+
+![image](https://user-images.githubusercontent.com/97643301/149492669-a56cd700-5a74-4650-b456-c4b0498d6f78.png)
+
 ## Setting an SSH Key
 ## Optimizing Remote Running
