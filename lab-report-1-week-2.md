@@ -81,5 +81,9 @@ Then back on your local client use the command `scp /Users/Username/.ssh/id_rsa.
 
 ### YOU ARE NOW ABLE TO SSH AND SCP WITHOUT USING A PASSWORD
 ## Optimizing Remote Running
-In order to do things faster and optimizing remote running, a method that is used is typing all the commands in one-go in the terminal seprated by `;`.
+In order to do things faster and optimizing remote running, a method that is used is typing all the commands in one-go in the terminal separated by `;`.
 For example you can do `touch SomeTxt.txt; scp SomeTxt.txt cs15lwi22___@ieng6.ucsd.edu:~/; ssh cs15lwi22____@ieng6.ucsd.edu; ls` and it will run the commands inputted it in consecutive order.
+
+Another you can do that would save a lot of time is creating an alias and running that alias that contains all the commands you need to run. For example `alias test="scp whereami.java cs15lwi22alg@ieng6.ucsd.edu:~/; ssh cs15lwi22alr@ieng6.ucsd.edu 'javac whereami.java';ssh cs15lwi22alg@ieng6.ucsd.edu 'java WhereAmI'". ` 
+This initially takes more than 10 key strokes, however once the alias is created, all you have to do is type in test in the terminal and it will run through the commands given which only takes **5** key strokes, and you can rename test to be a shorter word that will allow you to type it in less key strokes!
+
