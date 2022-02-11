@@ -6,14 +6,15 @@ In order to access the contents of the config file, I use my computer's native a
 <img width="156" alt="Screen Shot 2022-02-10 at 4 33 41 PM" src="https://user-images.githubusercontent.com/97643301/153520228-49f65a2f-df00-4c18-90eb-f532f77e132a.png">
 
 By using my computer's native app "TextEdit" I add the following text in order to streamline my SSH and adding the following to the config file. 
-### NOTE: You can change the name after `Host` to any name you would like, as this will be the name you type after typing `ssh`.
+
+**NOTE: You can change the name after `Host` to any name you would like, as this will be the name you type after typing `ssh`.**
 ```
  Host ieng6
     HostName ieng6.ucsd.edu
     User cs15lwi22zzz (use your username)
 ```
 
-### NOTE: May have to add the following line after user if `ssh` doesn't work. `IdentityFile ~/.ssh/id_rsa_ucsd`
+**NOTE: May have to add the following line after user if `ssh` doesn't work. `IdentityFile ~/.ssh/id_rsa_ucsd`**
 <img width="678" alt="Screen Shot 2022-02-10 at 4 36 27 PM" src="https://user-images.githubusercontent.com/97643301/153520744-e17f0331-80d1-4543-a632-156629b7beb4.png">
 
 I can now `ssh` on the terminal by using the name I inputted after `Host`, in this case for me I chose ieng6!
