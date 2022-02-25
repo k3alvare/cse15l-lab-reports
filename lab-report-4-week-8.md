@@ -80,8 +80,16 @@ _Links:_ [https://ucsd-cse15l-w22.github.io/]
 
 ## Answering the Following Questions 
 ### Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
+ Yes, I do believe there is a small change of code the will make the program work and thats adding a variable that checks and holds the positions of the back ticks.
+ Then adding another part within a if statement to check if those both back ticks are found within the open and close brackets, to still take it in as a link, and if the back ticks (either one or both) are found within the paranthesis, to still take it in as a link. In the case where the back tick is found in the open and closed bracket, and another is found outside of it, then it shouldn't count as a link.
+ 
+ ---
 
+ 
 ### Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
+Yes there is a small change that will be able to make the program work, and thats including a line of code similar to lecture where there anything before the last closed parantheses, to hold that text after the first open parantheses and consider that the "markdown link" as a way to be able to include those closed parantheses. For the other cases, the code already made holds that change.
+
+---
 
 ### Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
-
+No, there is no small code change that will make the program work as it has to check for a lot of things such as new lines, and if there's any text in those new lines. It also has to check for the correct parantheses and brackets in order to be considered a link. It is a bit nuanced to as this has many variability and many cases that will not be able to be solved with less than 10 lines of code.
