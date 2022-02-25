@@ -22,6 +22,9 @@ I can now `ssh` on the terminal by using the name I inputted after `Host`, in th
 
 To see how much faster things are, I can also use other commands such as `scp` using the name I chose (ieng6) instead of having to type my entire UCSD ieng6 account name!
 
+<img width="1137" alt="image" src="https://user-images.githubusercontent.com/97643301/155792668-2087f8d9-712f-4fcb-a42f-36b51cd4a995.png">
+
+
 <img width="446" alt="Screen Shot 2022-02-10 at 4 43 01 PM" src="https://user-images.githubusercontent.com/97643301/153521398-a641446f-dc42-4be7-84ff-7ae81157d340.png">
 
 Voila! And it's there!
